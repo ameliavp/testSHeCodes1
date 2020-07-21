@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Management Course ⚽️</title>
+    <style>
+      body {
+        background-color: ghostwhite;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        font-size: 44px;
+        font-weight: lighter;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 10px;
+        color: #2234d6;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid #1925ca;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        padding: 16px;
+        font-size: 15px;
+        border-radius: 4px;
+        margin: 30px;
+      }
+
+      img {
+        display: block;
+        margin: 25px auto 20px;
+        max-width: 100%;
+        border-radius: 18px;
+        padding: 10px;
+        width: 85%;
+      }
+
+      p {
+        line-height: 1.5;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        text-align: justify;
+        margin: 30px 0 15px;
+      }
+
+      li {
+        padding: 0;
+        list-style: none;
+        margin: 0 auto;
+        }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #1925ca;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 6px 6px 12px rgba(199, 195, 184);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        background-color: #1427cc;
+      }
+
+      .football {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+
+      .learn-more {
+        color: #1d29da;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 50px;
+      }
+
+      .learn-more:hover {
+        text-decoration: darkblue;
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 12px;
+        font-style: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="football">
+      <h1>
+        Football Management Course
+      </h1>
+      <hr>
+      <img
+        src="https://content.thecoachingmanual.com/hubfs/Coaching%20Manual-524.jpg"
+        alt="Football Management Course"
+      />
+      <p>
+        <h2>
+          The <strong>Ultimate Program</strong> is a must-have foundation program for anyone who wants to gain a comprehensive understanding
+          of how the game is managed, and looking to work in a football organisation. 
+        </h2>
+        </p>
+      <p>
+        The blended learning approach of the Ultimate Program contains a mix of
+        e-learning videos and online live seminars, and it has been carefully designed in
+        collaboration with a prestigious academic institution and leading
+        experts to ensure a high quality program. The Ultimate Football Program lasts for six
+        months starting in January and July; it compromises of six online modules as well as six face-to-face seminars. Each module
+        and face-to-face seminar addresses a key area of football management
+        which are necessary for people working within the football industry.
+      </p>
+      <ul>
+        <span style="font-style: italic;">
+      <li>
+      <a href="https://en.wikipedia.org/wiki/Manager_(association_football" target="_blank" class="learn-more">
+        Learn more about a Manager's responsibilities on Wikipedia
+      </a>
+      </li>
+      <hr>
+      <li>
+        <a href="https://thefootytipster.com/what-makes-a-great-football-manager/" target="_blank" class="learn-more">
+            Learn more about the attributes to be a Great Football Manager
+          </a>
+          </li>
+          </span>
+          </ul>
+      <button class="info-button">
+        Click here to receive Curriculum & Pricing information
+    </button>
+  </br>
+      <p class="footer">
+        This page was built by AP
+      </p>
+    </div>
+    <script>
+      function info() { 
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let team = prompt("What is your favorite team? ⚽️");
+        let age = prompt("What is your age?");
+
+        if (age>=18) {
+          alert("Thank you, " + name + "! 👋 We'll be sending you all the information by email shortly, in the meantime feel free to ask us any question! ");
+          } else {
+          alert("Thank you for your interest " + name + ", and what a great club to support! Unfortunately you can't apply if you're not over 18, we hope to see you then! 😊");
+          }
+         }
+
+      let infoButton = document.querySelector(".info-button");
+      infoButton.addEventListener("click", info);
+    </script>
+  </body>
+</html>
